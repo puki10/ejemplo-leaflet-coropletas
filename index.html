@@ -76,7 +76,7 @@
 	      
 	onEachFeature: infoRiqueza
       })
-      riqueza.addTo(mapa);
+      riqueza.addTo(mymap);
 	    
 	    
       function infoPresencia(feature, layer) {
@@ -109,7 +109,7 @@
 	      
 	onEachFeature: infoPresencia
       })
-      registrosPresencia.addTo(mapa);	    
+      registrosPresencia.addTo(mymap);	    
 	    
       var baseLayers = {
 	"OpenStreetMap": osm
@@ -118,9 +118,9 @@
 	"Riqueza de especies": riqueza,
 	"Registros de presencia": registrosPresencia
       };
-      L.control.layers(baseLayers, overlays).addTo(mapa);
+      L.control.layers(baseLayers, overlays).addTo(mymap);
 	    
-      L.control.mousePosition().addTo(mapa);
+      L.control.mousePosition().addTo(mymap);
 
     </script>
   </body>
